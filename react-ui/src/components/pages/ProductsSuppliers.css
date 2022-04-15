@@ -1,0 +1,33 @@
+.product-container{
+    /* background: url('/public/images/Background.jpg') center center/cover no-repeat fixed; */
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.left-col{
+    padding: 1rem;
+    background-color: lightgrey;
+    border: 2px solid #fff;
+    height: 100%;
+    position: fixed;
+}
+
+.right-col{
+    overflow-y: scroll;
+    margin-left: 100px;
+    top: 0;
+    left: 25%;
+    position: sticky;
+}
+
+.links{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.head{
+    height: 40px;
+    text-align: center;
+}
