@@ -122,7 +122,7 @@ function UpdateSupplier() {
                     </div>
                     <div className="col-12 mt-4">
                         <button className="btn btn-primary float-right search-btns" onClick={handleClick}>Submit</button>
-                        <button className="btn btn-secondary float-right search-btns" onClick={handleReset}>Reset</button>
+                        {/* <button className="btn btn-secondary float-right search-btns" onClick={handleReset}>Reset</button> */}
                     </div>
                 </form>
             </div>
