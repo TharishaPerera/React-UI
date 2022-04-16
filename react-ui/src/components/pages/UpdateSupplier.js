@@ -121,7 +121,7 @@ function UpdateSupplier() {
                             value={postalCode} onChange={(e) => setPostalCode(e.target.value)} />
                     </div>
                     <div className="col-12 mt-4">
-                        <button className="btn btn-primary float-right search-btns" onClick={handleClick}>Submit</button>
+                        <button className="btn btn-primary float-right search-btns" onClick={handleClick}>Update</button>
                         {/* <button className="btn btn-secondary float-right search-btns" onClick={handleReset}>Reset</button> */}
                     </div>
                 </form>
