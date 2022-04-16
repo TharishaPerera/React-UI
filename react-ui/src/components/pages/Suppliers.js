@@ -35,9 +35,9 @@ class Supplier extends React.Component {
                         <div className='row'>
                             <Link to="/create-supplier" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Create Supllier</Link>
                         </div>
-                        <div className='row'>
+                        {/* <div className='row'>
                             <Link to="/update-supplier" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Update Supplier</Link>
-                        </div>
+                        </div> */}
                         <div className='row'>
                             <Link to="/delete-supplier" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Delete Supplier</Link>
                         </div>
@@ -56,6 +56,7 @@ class Supplier extends React.Component {
                                     <th>City</th>
                                     <th>Country</th>
                                     <th>Postal Code</th>
+                                    <th>Action</th>
                                 </thead>
                                 <tbody className='body'>
                                     {
@@ -71,6 +72,9 @@ class Supplier extends React.Component {
                                                     <td>{supplier.city}</td>
                                                     <td>{supplier.country}</td>
                                                     <td>{supplier.postalCode}</td>
+                                                    <td>
+                                                        <Link to={`/update-supplier/${supplier.supplierId}`} className='align-items-center btn btn-dark btn-sm'>Update</Link>
+                                                    </td>
                                                 </tr>
                                         )
                                     }

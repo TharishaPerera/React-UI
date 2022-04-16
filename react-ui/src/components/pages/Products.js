@@ -37,9 +37,9 @@ class Product extends React.Component {
                         <div className='row'>
                             <Link to="/create-product" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Create Product</Link>
                         </div>
-                        <div className='row'>
+                        {/* <div className='row'>
                             <Link to="/update-product" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Update Product</Link>
-                        </div>
+                        </div> */}
                         <div className='row'>
                             <Link to="/delete-product" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Delete Products</Link>
                         </div>
@@ -57,6 +57,7 @@ class Product extends React.Component {
                                     <th>Availability</th>
                                     <th>Quantity</th>
                                     <th>Supplier ID</th>
+                                    <th>Action</th>
                                 </thead>
                                 <tbody className='body'>
                                     {
@@ -71,6 +72,9 @@ class Product extends React.Component {
                                                 <td>{product.isAvailable}</td>
                                                 <td>{product.availableQuantity}</td>
                                                 <td>{product.supplierId}</td>
+                                                <td>
+                                                    <Link to={`/update-product/${product.productId}`} className='align-items-center btn btn-dark btn-sm'>Update</Link>
+                                                </td>
                                             </tr>
                                         )
                                     }

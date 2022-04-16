@@ -18,7 +18,7 @@ import httpClient from "../http-common-product";
         return httpClient.post("/products", product);
     } 
 
-    const getProductById = productId =>{
+    const getProductById = productId =>{ 
         return httpClient.get(`/products/${productId}`);
     }
 
@@ -26,8 +26,8 @@ import httpClient from "../http-common-product";
 
     // }
 
-    const updateProduct = product => {
-        return httpClient.put('/products', product);
+    const updateProduct = (productId, product) => {
+        return httpClient.put(`/products/${productId}`, product);
     }
 
     const deleteProduct = productId => {
