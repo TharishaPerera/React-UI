@@ -30,7 +30,22 @@ class Supplier extends React.Component {
                             <h3 className='text-center'>Supplier Dashboard</h3>
                         </div>
                         <div className='row'>
-                            <Link to="/search-supplier" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Search Suppliers</Link>
+                            <Link to="/search-supplier-by-id" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Search Suppliers By ID</Link>
+                        </div>
+                        <div className='row'>
+                            <Link to="/search-supplier-by-name" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Search Suppliers By Name</Link>
+                        </div>
+                        <div className='row'>
+                            <Link to="/search-supplier-by-industry" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Search Suppliers By Industry</Link>
+                        </div>
+                        <div className='row'>
+                            <Link to="/search-supplier-by-city" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Search Suppliers By City</Link>
+                        </div>
+                        <div className='row'>
+                            <Link to="/search-supplier-by-country" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Search Suppliers By Country</Link>
+                        </div>
+                        <div className='row'>
+                            <Link to="/search-supplier-by-postal-code" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Search Suppliers By Postal Code</Link>
                         </div>
                         <div className='row'>
                             <Link to="/create-supplier" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Create Supllier</Link>

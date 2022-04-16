@@ -30,7 +30,7 @@ function App() {
             <Route path='/create-product' element={<CreateProduct />} />
             <Route path='/update-product/:productId' element={<UpdateProduct />} />
             <Route path='/delete-product' element={<DeleteProducts />} />
-            <Route path='/search-supplier' element={<SearchSupplier />} />
+            <Route path='/search-supplier-by-id' element={<SearchSupplier />} />
             <Route path='/create-supplier' element={<CreateSupplier />} />
             <Route path='/update-supplier/:supplierId' element={<UpdateSupplier />} />
             <Route path='/delete-supplier' element={<DeleteSupplier />} />
