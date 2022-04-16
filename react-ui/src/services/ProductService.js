@@ -22,6 +22,10 @@ import httpClient from "../http-common-product";
         return httpClient.get(`/products/${productId}`);
     }
 
+    // const getProductByCategory = productType =>{
+
+    // }
+
     const updateProduct = product => {
         return httpClient.put('/products', product);
     }
@@ -30,4 +34,8 @@ import httpClient from "../http-common-product";
         return httpClient.delete(`/products/${productId}`);
     }
 
-export default {getAllProducts, createProduct, updateProduct, getProductById, deleteProduct}
+    const deleteAllProducts = () => {
+        return httpClient.delete('/products');
+    }
+
+export default {getAllProducts, createProduct, updateProduct, getProductById, deleteProduct, deleteAllProducts}

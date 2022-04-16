@@ -19,7 +19,12 @@ function CreateSupplier() {
         const supplier = { supplierName, industry, supplierEmail, supplierTelephone, street, city, country, postalCode }
         console.log(supplier);
 
-        SupplierService.createSupplier(supplier);
+        SupplierService.createSupplier(supplier)
+        .then(
+            alert("Supplier Created Successfully")
+        ).then(
+            handleReset
+        )
     }
 
     const handleReset = () => {

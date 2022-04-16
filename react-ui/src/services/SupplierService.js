@@ -9,7 +9,7 @@ const createSupplier = supplier =>{
 } 
 
 const deleteSupplier = supplierId =>{
-
+    return httpClient.delete(`/suppliers/${supplierId}`);
 }
 
 

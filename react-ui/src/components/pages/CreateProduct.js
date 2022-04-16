@@ -9,7 +9,7 @@ function CreateProduct() {
     const [productType, setType] = useState('');
     const [unitPrice, setUnitPrice] = useState();
     const [isAvailable, setAvailable] = useState('');
-    const [availableQuantity, setAvailableQuantity] = useState();
+    const [availableQuantity, setAvailableQuantity] = useState(0);
     const [supplierId, setSupplierId] = useState();
 
     const handleClick = (e) => {
@@ -18,7 +18,12 @@ function CreateProduct() {
         const product = { productName, productDescription, productType, unitPrice, isAvailable, availableQuantity, supplierId }
         console.log(product);
 
-        ProductService.createProduct(product);
+        ProductService.createProduct(product)
+        .then(
+            alert("Product Created Successfully")
+        ).then(
+            handleReset
+        )
     }
 
     const handleReset = () => {
@@ -72,12 +77,12 @@ function CreateProduct() {
                 </div>
                 <div className="col-md-4">
                     <label for="quantity" className="form-label">Quantity</label>
-                    <input name="availableQuantity" type="text" className="form-control" id="quantity"
+                    <input name="availableQuantity" type="number" className="form-control" id="quantity"
                         value={availableQuantity} onChange={(e) => setAvailableQuantity(e.target.value)} />
                 </div>
                 <div className="col-md-4">
                     <label for="supplierId" className="form-label">Supplier ID</label>
-                    <input name="supplierId" type="text" className="form-control" id="supplierId"
+                    <input name="supplierId" type="number" className="form-control" id="supplierId"
                         value={supplierId} onChange={(e) => setSupplierId(e.target.value)} />
                 </div>
                 <div className="col-12 mt-4">
