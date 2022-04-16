@@ -15,6 +15,7 @@ import CreateSupplier from './components/pages/CreateSupplier';
 import UpdateSupplier from './components/pages/UpdateSupplier';
 import DeleteSupplier from './components/pages/DeleteSupplier';
 import SeacrhProductsByCategory from './components/pages/SeacrhProductsByCategory';
+import SearchProductsByAvailability from './components/pages/SearchProductsByAvailability';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path='/suppliers' element={<Suppliers />} />
             <Route path='/search-product-by-id' element={<SearchProductById />} />
             <Route path='/search-product-by-category' element={<SeacrhProductsByCategory />} />
+            <Route path='/search-product-by-availability' element={<SearchProductsByAvailability />} />
             <Route path='/create-product' element={<CreateProduct />} />
             <Route path='/update-product/:productId' element={<UpdateProduct />} />
             <Route path='/delete-product' element={<DeleteProducts />} />

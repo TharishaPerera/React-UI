@@ -29,12 +29,45 @@ function SeacrhProductsByCategory() {
                 </div>
             </div>
 
-            <div className="mt-5" >
-                <form className="row g-3">
-                    {/* <div className="col-md-6">
+            <div className="mt-3" >
+                <div className='table-responsive'>
+                    <table className='table table-sm table-striped table-hover mt-3'>
+                        <thead className='thead-light align-middle head'>
+                            <th>Product ID</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                            <th>Unit Price</th>
+                            <th>Availability</th>
+                            <th>Quantity</th>
+                            <th>Supplier ID</th>
+                        </thead>
+                        <tbody className='body'>
+                            {
+                                // this.state.products.map(
+                                //     product =>
+                                <tr >
+                                    <td>dadwda</td>
+                                    <td>dadwda</td>
+                                    <td>dadwda</td>
+                                    <td>dadwda</td>
+                                    <td>dadwda</td>
+                                    <td>dadwda</td>
+                                    <td>dadwda</td>
+                                    <td>dadwda</td>
+                                </tr>
+                                // )
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+
+                {/* <form className="row g-3">
+                    <div className="col-md-6">
                     <label for="productId" className="form-label">Product ID</label>
                     <input type="number" className="form-control" id="productId" readonly />
-                </div> */}
+                </div>
                     <div className="col-md-12">
                         <label for="productName" className="form-label">Product Name</label>
                         <input type="text" className="form-control" id="productName" readonly />
@@ -63,7 +96,7 @@ function SeacrhProductsByCategory() {
                         <label for="supplierId" className="form-label">Supplier ID</label>
                         <input type="text" className="form-control" id="supplierId" readonly />
                     </div>
-                </form>
+                </form> */}
             </div>
         </div>
     )
