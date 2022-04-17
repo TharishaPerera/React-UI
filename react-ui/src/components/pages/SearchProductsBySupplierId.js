@@ -2,19 +2,15 @@ import React, { useState } from 'react';
 import '../../App.css';
 import './SearchButtons.css';
 
-function SearchProductsByAvailability() {
-    const [availability, setAvailability] = useState('');
+function SearchProductsBySupplierId() {
+    const [supplierId, setSupplierId] = useState('');
     return (
         <div className='container'>
             <div classNameName="row mt-3">
                 <div className="row g-3">
                     <form className="col-md-4 mt-5">
-                        <label for="productId" className="form-label" >Select Availability:</label>
-                        <select className='form-control' value={availability} onChange={(e) => setAvailability(e.target.value)}>
-                            <option >Select Availability</option>
-                            <option value="Available">Available</option>
-                            <option value="Not-Available">Not-Available</option>
-                        </select>
+                        <label for="productId" className="form-label" >Enter Supplier ID:</label>
+                        <input type="number" min="1" className="form-control" id="productId" value={supplierId} onChange={(e) => setSupplierId(e.target.value)} />
 
                         <div className="mt-3">
                             <button type="submit" className="btn btn-primary btn-sm search-btns">Search</button>
@@ -62,4 +58,4 @@ function SearchProductsByAvailability() {
     )
 }
 
-export default SearchProductsByAvailability
+export default SearchProductsBySupplierId

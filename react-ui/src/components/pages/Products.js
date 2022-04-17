@@ -38,6 +38,9 @@ class Product extends React.Component {
                             <Link to="/search-product-by-availability" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Search Products By Availability</Link>
                         </div>
                         <div className='row'>
+                            <Link to="/search-product-by-supplier-id" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Search Products By Supplier ID</Link>
+                        </div>
+                        <div className='row'>
                             <Link to="/create-product" className='align-items-center btn btn-light d-grid gap-2 mt-3 links'>Create Product</Link>
                         </div>
                         {/* <div className='row'>
