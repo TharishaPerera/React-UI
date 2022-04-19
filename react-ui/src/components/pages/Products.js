@@ -58,7 +58,7 @@ class Product extends React.Component {
                                     <th>Product ID</th>
                                     <th>Name</th>
                                     <th>Description</th>
-                                    <th>Type</th>
+                                    <th>Category</th>
                                     <th>Unit Price</th>
                                     <th>Availability</th>
                                     <th>Quantity</th>
