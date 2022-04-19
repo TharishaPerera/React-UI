@@ -75,7 +75,7 @@ function SearchSupplier() {
                     </div>                    
                     <div className="col-md-6">
                         <label for="postalCode" className="form-label">Postal Code</label>
-                        <input type="number" className="form-control" id="postalCode" value={postalCode} readonly />
+                        <input type="text" className="form-control" id="postalCode" value={postalCode} readonly />
                     </div>
                     <div className="col-md-4">
                         <label for="street" className="form-label">Street</label>

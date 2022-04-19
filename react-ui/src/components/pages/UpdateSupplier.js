@@ -58,19 +58,6 @@ function UpdateSupplier() {
 
     return (
         <div className='container'>
-            {/* <div classNameName="row mt-3">
-                <div className="row g-3">
-                    <form className="col-md-4 mt-5">
-                        <label for="productId" className="form-label">Enter Supplier ID:</label>
-                        <input type="number" min="1" className="form-control" id="productId" />
-                        <div className="mt-3">
-                            <button type="submit" className="btn btn-primary btn-sm search-btns">Search</button>
-                            <button type="reset" className="btn btn-secondary btn-sm search-btns">Reset</button>
-                        </div>
-                    </form>
-                </div>
-            </div> */}
-
             <div className="mt-5" >
                 <form className="row g-3 mt-5">
                     <div className="col-12">
@@ -80,7 +67,6 @@ function UpdateSupplier() {
                     </div>
                     <div className="col-md-6">
                         <label for="industry" className="form-label">Industry</label>
-                        {/* <input name="productType" type="text" className="form-control" id="type" /> */}
                         <select className='form-control' value={industry} onChange={(e) => setIndustry(e.target.value)}>
                             <option >Select Industry</option>
                             <option value="Automobile">Automobile</option>
@@ -117,7 +103,7 @@ function UpdateSupplier() {
                     </div>
                     <div className="col-md-4">
                         <label for="postalCode" className="form-label">Postal Code</label>
-                        <input name="postalCode" type="number" className="form-control" id="postalCode"
+                        <input name="postalCode" type="text" className="form-control" id="postalCode"
                             value={postalCode} onChange={(e) => setPostalCode(e.target.value)} />
                     </div>
                     <div className="col-12 mt-4">

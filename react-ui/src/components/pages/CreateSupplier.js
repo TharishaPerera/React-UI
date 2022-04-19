@@ -85,7 +85,7 @@ function CreateSupplier() {
                 </div>
                 <div className="col-md-4">
                     <label for="postalCode" className="form-label">Postal Code</label>
-                    <input name="postalCode" type="number" className="form-control" id="postalCode"
+                    <input name="postalCode" type="text" className="form-control" id="postalCode"
                         value={postalCode} onChange={(e) => setPostalCode(e.target.value)} />
                 </div>
                 <div className="col-12 mt-4">
