@@ -26,9 +26,13 @@ import httpClient from "../http-common-product";
         return httpClient.get(`/products/supplierId?supplierId=${supplierId}`);
     }
 
-    // const getProductByCategory = productType =>{
-
-    // }
+    const getProductByCategory = productType =>{
+        return httpClient.get(`/products/productType?productType=${productType}`);
+    }
+    
+    const getProductByAvailability = isAvailable =>{
+        return httpClient.get(`/products/isAvailable?isAvailable=${isAvailable}`);
+    }
 
     const updateProduct = (productId, product) => {
         return httpClient.put(`/products/${productId}`, product);
@@ -42,4 +46,4 @@ import httpClient from "../http-common-product";
         return httpClient.delete('/products');
     }
 
-export default {getAllProducts, createProduct, updateProduct, getProductById, deleteProduct, deleteAllProducts, getProductBySupplierId}
+export default {getAllProducts, createProduct, updateProduct, getProductById, deleteProduct, deleteAllProducts, getProductBySupplierId, getProductByCategory, getProductByAvailability}
